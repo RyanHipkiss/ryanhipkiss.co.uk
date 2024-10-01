@@ -24,6 +24,9 @@ html, body {
 .split-section .content h1 {
     font-size: 10rem;
     color: white;
+    opacity: 0;
+    transform: translateY(-100px); /* Start above the screen */
+    transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .split-section .content h2 {
@@ -32,6 +35,8 @@ html, body {
     text-align: center;
     margin-top: 1rem;
     font-style: italic;
+    opacity: 0;
+    transition: opacity 2s ease-out;
 }
 
 .hi-ryan {
@@ -39,6 +44,15 @@ html, body {
     position: absolute;
     bottom: 1%;
     right: 1%;
+}
+
+.split-section .content h1.animate {
+    opacity: 1;
+    transform: translateY(0); /* Bring it back to its normal position */
+}
+
+.split-section .content h2.fade-in {
+    opacity: 1;
 }
 
 @media (max-width: 1024px) {
@@ -50,3 +64,4 @@ html, body {
         font-size: 2rem;
     }
 }
+
