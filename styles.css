@@ -34,6 +34,13 @@ html, body {
     font-style: italic;
 }
 
+.hi-ryan {
+    color: white;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
 @media (max-width: 1024px) {
     .split-section .content h1 {
         font-size: 4rem;
