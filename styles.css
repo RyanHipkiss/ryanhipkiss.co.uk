@@ -97,6 +97,7 @@ html, body {
 .about .content .me-photo img {
     border-radius: 50%;
     border: 5px solid #231F20;
+    width: 80%;
 }
 
 .about::before {
