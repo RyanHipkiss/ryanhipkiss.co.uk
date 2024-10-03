@@ -39,6 +39,16 @@ html, body {
     transition: opacity 2s ease-out;
 }
 
+.split-section .pointer-down {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
 .about {
     background: white;
     color: #231F20;
