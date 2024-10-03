@@ -31,5 +31,16 @@ window.onload = function() {
             requestAnimationFrame(animate);
         }
         animate();
+
+
     })
+
+    const pointDownEvent = (event) => {
+        document.getElementById('whoAmI').scrollIntoView({ 
+            behavior: 'smooth', // Smooth scrolling effect,
+            block: 'start'
+        });
+    }
+
+    document.getElementById('pointDownFinger').onclick = pointDownEvent
 };
